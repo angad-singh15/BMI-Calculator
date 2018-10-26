@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title>BMI Calculator</title>
+		<link rel = "stylesheet" href = "bmi.css" />
+	</head>
+	<body>
+		<div class="header">
+			<h1>BMI Calculator</h1>
+		</div>
+		
+		<form action=" " onsubmit="">Enter your Weight:
+ 		<input type="text" id="weight"> </input>
+ 		<select id = "type">
+ 			<option value = "lbs" >lbs</option>
+ 			<option value = "kg" >kg</option>
+ 		</select>
+
+		<button onclick = "resetWeight()">Reset</button>
+		</form>
+		
+		<br />
+		
+			<form action="" onsubmit="">
+			  <span>Enter your Height:</span>
+			  <span id="feet">
+			    <input type="text" id="height" name="height"></input> Feet
+			    <input type="text" id="height2" name="height2"></input> Inches
+			  </span>
+
+			  <span id="cm" class="hidden">
+
+			    <input type="text" id="height"></input> Centimeters
+			  </span>
+			  <select id="typeH" onchange="checkSelection();" onfocus="this.selectedIndex = -1;">
+			    <option value="feet">Feet/Inches</option>
+			    <option value="cm">Centimeters</option>
+			  </select>
+			  <button onclick = "resetHeight()">Reset</button>
+			</form>
+		<br />
+		
+		<input type = "button" value = "Calculate" onclick="check(), calculateBMI(), bmiConclusion()"> </input>
+		<br /> <br />
+		Your BMI is: <input type = "text" id = "result" > 
+		<br/>
+		<p id = "conclusion"> </p>
+		
+		<div id = "x"></div>
+
+	</body>
+
+	<script src="bmi.js"> </script>
+
+
+</html>

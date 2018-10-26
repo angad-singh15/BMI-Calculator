@@ -1,0 +1,21 @@
+body {
+	background-color: white;
+}
+h1{
+	border: 5px solid powderblue;
+	color: black;
+	text-align: center;
+	font-family: georgia;
+	font-size: 300%;
+}
+label {
+	color: black;
+}
+
+p{
+	color: red;
+}
+
+.hidden {
+    display: none;
+}
